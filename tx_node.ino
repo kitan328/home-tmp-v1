@@ -80,11 +80,12 @@ void loop(){
     driver.waitPacketSent();
   }
   
-  delay(200);
+  //delay(200);
   
   lastTMP = nowTMP;
   lastHDT = nowHDT;
 
+  LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF); 
   //goToSleep();
   //LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
 }
