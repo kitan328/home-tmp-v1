@@ -38,11 +38,13 @@ void loop(){
       int i;
 
       // Message with a good checksum received, dump it.
+      /*
       driver.printBuffer("Got:", buf, buflen);
       Serial.print("Buf[0] = ");
       Serial.println(buf[0]);
       Serial.println("=================");
       Serial.println((char)buf[0]);
+      */
       /*
       Serial.println((char)23);
       Serial.println((char)24);
